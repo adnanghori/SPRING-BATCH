@@ -1,4 +1,4 @@
-package com.springboot.dump.configuration;
+package com.springboot.batch.configuration;
 
 import javax.sql.DataSource;
 
@@ -23,7 +23,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.task.SimpleAsyncTaskExecutor;
 import org.springframework.core.task.TaskExecutor;
 
-import com.springboot.dump.model.Employee;
+import com.springboot.batch.model.Employee;
 
 @Configuration
 @EnableBatchProcessing

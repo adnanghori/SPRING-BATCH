@@ -1,4 +1,4 @@
-package com.springboot.dump.model;
+package com.springboot.batch.model;
 
 public class Employee {
 

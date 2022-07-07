@@ -1,8 +1,8 @@
-package com.springboot.dump.configuration;
+package com.springboot.batch.configuration;
 
 import org.springframework.batch.item.ItemProcessor;
 
-import com.springboot.dump.model.Employee;
+import com.springboot.batch.model.Employee;
 
 public class EmployeeItemProcessor implements ItemProcessor<Employee, Employee> {
 

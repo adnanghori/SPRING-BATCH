@@ -1,4 +1,4 @@
-package com.springboot.dump;
+package com.springboot.batch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
