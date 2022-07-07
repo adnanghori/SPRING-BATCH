@@ -1,10 +1,10 @@
-package com.springboot.dump;
+package com.springboot.batch;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringDumpApplicationTests {
+class SpringBatchApplicationTests {
 
 	@Test
 	void contextLoads() {
