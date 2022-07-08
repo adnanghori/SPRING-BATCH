@@ -3,7 +3,7 @@ package com.springboot.batch.model;
 public class Employee {
 
 	
-		private Integer EMPLOYEE_ID;
+		private String EMPLOYEE_ID;
 		private String FIRST_NAME;
 		private String LAST_NAME;
 		private String EMAIL;
@@ -12,16 +12,16 @@ public class Employee {
 		private String JOB_ID;
 		private String SALARY;
 		private String COMMISSION_PCT;
-		private Integer MANAGER_ID;
-		private Integer DEPARTMENT_ID;
+		private String MANAGER_ID;
+		private String DEPARTMENT_ID;
 		public Employee() {
 			super();
 			// TODO Auto-generated constructor stub
 		}
-		public Integer getEMPLOYEE_ID() {
+		public String getEMPLOYEE_ID() {
 			return EMPLOYEE_ID;
 		}
-		public void setEMPLOYEE_ID(Integer eMPLOYEE_ID) {
+		public void setEMPLOYEE_ID(String eMPLOYEE_ID) {
 			EMPLOYEE_ID = eMPLOYEE_ID;
 		}
 		public String getFIRST_NAME() {
@@ -73,21 +73,21 @@ public class Employee {
 		public void setCOMMISSION_PCT(String cOMMISSION_PCT) {
 			COMMISSION_PCT = cOMMISSION_PCT;
 		}
-		public Integer getMANAGER_ID() {
+		public String getMANAGER_ID() {
 			return MANAGER_ID;
 		}
-		public void setMANAGER_ID(Integer mANAGER_ID) {
+		public void setMANAGER_ID(String mANAGER_ID) {
 			MANAGER_ID = mANAGER_ID;
 		}
-		public Integer getDEPARTMENT_ID() {
+		public String getDEPARTMENT_ID() {
 			return DEPARTMENT_ID;
 		}
-		public void setDEPARTMENT_ID(Integer dEPARTMENT_ID) {
+		public void setDEPARTMENT_ID(String dEPARTMENT_ID) {
 			DEPARTMENT_ID = dEPARTMENT_ID;
 		}
-		public Employee(Integer eMPLOYEE_ID, String fIRST_NAME, String lAST_NAME, String eMAIL, String pHONE_NUMBER,
-				String hIRE_DATE, String jOB_ID, String sALARY, String cOMMISSION_PCT, Integer mANAGER_ID,
-				Integer dEPARTMENT_ID) {
+		public Employee(String eMPLOYEE_ID, String fIRST_NAME, String lAST_NAME, String eMAIL, String pHONE_NUMBER,
+				String hIRE_DATE, String jOB_ID, String sALARY, String cOMMISSION_PCT, String mANAGER_ID,
+				String dEPARTMENT_ID) {
 			super();
 			EMPLOYEE_ID = eMPLOYEE_ID;
 			FIRST_NAME = fIRST_NAME;
