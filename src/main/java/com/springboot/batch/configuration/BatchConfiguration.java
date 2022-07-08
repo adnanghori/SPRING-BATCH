@@ -59,6 +59,7 @@ public class BatchConfiguration {
 		public EmployeeItemProcessor employeeItemProcessor() {
 			return new EmployeeItemProcessor();
 		}
+		@Bean
 		public JdbcBatchItemWriter<Employee> batchItemWriter(){
 			JdbcBatchItemWriter<Employee> jdbcBatchItemWriter = new JdbcBatchItemWriter<>();
 			jdbcBatchItemWriter.setItemSqlParameterSourceProvider(new BeanPropertyItemSqlParameterSourceProvider<Employee>());
@@ -66,6 +67,7 @@ public class BatchConfiguration {
 			jdbcBatchItemWriter.setDataSource(this.dataSource);
 			return jdbcBatchItemWriter;
 		}
+		@Bean
 		public Job importEmployeeJob() {
 			Job job = this.jobBuilderFactory.get("EMPLOYEE-IMPORT-JOB").incrementer(new RunIdIncrementer()).flow(step()).end().build();
 			return job;
@@ -75,7 +77,7 @@ public class BatchConfiguration {
 			TaskletStep step = this.stepBuilderFactory.get("step1").<Employee,Employee>chunk(10).reader(itemReader()).processor(employeeItemProcessor()).writer(batchItemWriter()).build();
 			return step;
 		}
-		 @Bean
+	 @Bean
          public TaskExecutor taskExecutor() {
              SimpleAsyncTaskExecutor taskExecutor = new SimpleAsyncTaskExecutor();
              taskExecutor.setConcurrencyLimit(4);
